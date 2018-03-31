@@ -1,0 +1,19 @@
+.avatar-picker .header {
+  margin-bottom: 6px;
+}
+
+.avatar-picker .selected-avatar {
+  border: 1px solid transparent;
+}
+
+.avatar-picker .selected-avatar:hover,
+.selected-avatar:focus,
+.selected-avatar.active {
+  border: 1px solid rgb(155, 160, 163);
+  cursor: pointer;
+}
+
+.avatar-picker .selected-avatar:hover .overlay,
+.selected-avatar:focus .overlay {
+  background-color: transparent;
+}

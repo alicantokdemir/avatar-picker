@@ -1,0 +1,50 @@
+.choose-avatar-header {
+  font-family: "Source Sans Pro", sans-serif;
+  color: rgb(249, 249, 249);
+  font-size: 16px;
+  margin: 14px 0;
+}
+
+.avatar-list {
+  list-style: none;
+  padding: 0;
+  margin: -7px 0 0 0;
+}
+
+.avatar-list li {
+  display: inline-block;
+  margin: 7px;
+  height: 60px;
+  width: 60px;
+  position: relative;
+}
+
+.avatar-list li:nth-child(4n) {
+  margin-right: -1px;
+}
+
+.avatar-list li:nth-child(4n + 1) {
+  margin-left: -1px;
+}
+
+.loading-spinner {
+  border: 3px solid transparent;
+  border-top: 3px solid rgb(44, 48, 51);
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
